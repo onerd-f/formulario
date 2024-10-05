@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="script.js"></script>
+</head>
+
+<body>
+    <div class="form-container">
+        <h1>Formulário de Cadastro</h1>
+
+        <form id="registrationForm">
+            <div class="container">
+                <div class="column">
+                    <h3>Dados Básicos</h3>
+                    <div class="form-group">
+                        <label for="email">E-mail </label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Senha <span class="red-asterisk">*</span></label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="repeatEmail">Repetir E-mail <span class="red-asterisk">*</span></label>
+                        <input type="email" id="repeatEmail" name="repeatEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="repeatPassword">Repetir Senha <span class="red-asterisk">*</span></label>
+                        <input type="password" id="repeatPassword" name="repeatPassword" required>
+                    </div>
+        
+        
+                    <h3>Dados cadastrais</h3>
+                    <div class="form-group">
+                        <label for="name">Nome <span class="red-asterisk">*</span></label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="surname">Sobrenome <span class="red-asterisk">*</span></label>
+                        <input type="text" id="surname" name="surname" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="sex">Sexo <span class="red-asterisk">*</span></label>
+                        <select id="sex" name="sex" required>
+                            <option value="">Selecione</option>
+                            <option value="masculino">Masculino</option>
+                            <option value="feminino">Feminino</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="cpf">CPF <span class="red-asterisk">*</span></label>
+                        <input type="text" id="cpf" name="cpf" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Telefone <span class="red-asterisk">*</span></label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cellphone">Celular</label>
+                        <input type="tel" id="cellphone" name="cellphone">
+                    </div>
+                    <div class="form-group">
+                        <label for="birthdate">Data de nascimento <span class="red-asterisk">*</span></label>
+                        <input type="date" id="birthdate" name="birthdate" required>
+                    </div>
+                </div>
+                <div class="column">
+                    <h3>Endereço de entrega</h3>
+                <div class="form-group">
+                    <label for="cep">CEP <span class="red-asterisk">*</span></label>
+                    <input type="text" id="cep" name="cep">
+                    <button type="button" id="buscarCep">Buscar CEP</button>
+                </div>
+                <div class="form-group">
+                    <label for="street">Rua <span class="red-asterisk">*</span></label>
+                    <input type="text" id="street" name="street" required>
+                </div>
+                <div class="form-group">
+                    <label for="number">Número <span class="red-asterisk">*</span></label>
+                    <input type="text" id="number" name="number" required>
+                </div>
+                <div class="form-group">
+                    <label for="complement">Complemento</label>
+                    <input type="text" id="complement" name="complement">
+                </div>
+                <div class="form-group">
+                    <label for="reference">Referência</label>
+                    <input type="text" id="reference" name="reference">
+                </div>
+                <div class="form-group">
+                    <label for="neighborhood">Bairro <span class="red-asterisk">*</span></label>
+                    <input type="text" id="neighborhood" name="neighborhood" required>
+                </div>
+                <div class="form-group">
+                    <label for="city">Cidade <span class="red-asterisk">*</span></label>
+                    <input type="text" id="city" name="city" required>
+                </div>
+                <div class="form-group">
+                    <label for="state">Estado <span class="red-asterisk">*</span></label>
+                    <input type="text" id="state" name="state" required>
+                </div>
+    
+                <div class="form-group">
+                    <input type="checkbox" id="receiveOffers" name="receiveOffers">
+                    <label for="receiveOffers">Receber ofertas e novidades por e-mail</label>
+                </div>
+                <div id="error-messages" class="error"></div>
+    
+                <button type="submit" id="buttonSubmit">Cadastrar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

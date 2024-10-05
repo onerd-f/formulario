@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('/img/fundo.jpg'); /* Caminho para sua imagem */
+    background-size: cover; /* Ajusta a imagem para cobrir toda a área */
+    background-position: center; /* Centraliza a imagem */
+    height: 100vh; /* Altura da tela inteira */
+    color: white;
+}
+
+.form-container {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    max-width: 600px; /* Largura máxima do formulário */
+    margin: 20px auto; /* Margem vertical de 20px e centralizado */
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que as colunas se ajustem se necessário */
+}
+
+.column {
+    flex: 1; /* Cada coluna ocupará o espaço disponível */
+    padding: 20px; /* Espaçamento interno das colunas */
+}
+
+.red-asterisk {
+    color: red;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box; /* Inclui padding e bordas na largura total */
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.error {
+    color: red;
+    margin-bottom: 10px;
+}
